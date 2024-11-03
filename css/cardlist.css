@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root
+{
+font-family: 'Roboto', sans-serif;
+}
+
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+}
+
+
+.container{
+    width: 300px;
+    height: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.box1{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: #5268e5;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.box1::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: none;
+    border-radius: 50%;
+    border: 40px solid rgb(255, 255, 255, 0.1);
+    left: 3%;
+    top: -30px;
+}
+
+.box1::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: none;
+    border-radius: 50%;
+    border: 10px solid rgb(255, 255, 255, 0.1);
+    left: 3%;
+    top: -30px;
+}
+
+.box1 .icon{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 .icon .bi-currency-exchange{
+    color: #fff;
+    font-size: 25px;
+    margin-left: 8px;
+}
+
+.box1 .text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 20px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+}
+
+.box1 .text span{
+    letter-spacing: 2px;
+    font-size: 9px;
+}
+
+.box2{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.box2 .card{
+    width: 95%;
+    height: 17%;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+    background: #fff;
+    color: gray;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .item-price {
+    color: red;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.card .item-title{
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.box2 .card:hover{
+    width: 105%;
+    height: 25%;
+}
+
+.box2 .card img{
+    width: 40px;
+    height: 100%;
+    /* border-radius: 10px 0px 10px 10px; */
+    border-radius: 50%;
+}
+
+
+
+
+
